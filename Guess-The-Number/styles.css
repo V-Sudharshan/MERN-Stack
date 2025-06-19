@@ -1,0 +1,107 @@
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body.light {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.container {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+}
+
+body.light .container {
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle {
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 80px;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+}
+
+body.light input {
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #d1d5db;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body.light button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+body.light button:hover {
+  background: #1d4ed8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    max-width: 90%;
+  }
+  input {
+    width: 60px;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .theme-toggle {
+    margin-top: 0.5rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+}
