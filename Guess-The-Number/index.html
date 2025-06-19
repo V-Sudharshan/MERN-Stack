@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Number Guesser</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+   <div class="container">
+        <h1>Enter Number Range</h1>
+        <div>
+            <input type="number" id="min" placeholder="Min">
+            <input type="number" id="max" placeholder="Max">
+        </div>
+        <button id="startBtn">Start</button>
+        <div id="game" class="hidden">
+            <p id="guessText"></p>
+            <button id="lowerBtn" class="hidden">Lower</button>
+            <button id="correctBtn" class="hidden">Correct</button>
+            <button id="higherBtn" class="hidden">Higher</button>
+            <button id="restartBtn" class="hidden">Restart</button>
+        </div>
+        <button id="themeToggle" class="theme-toggle">Toggle Theme</button>
+    </div>
+</body>
+
+</html>
